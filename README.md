@@ -24,6 +24,24 @@
 
 React · Vite · TypeScript · React Router · Tailwind CSS · shadcn/ui · Radix UI · Motion · Lucide
 
+## Структура проекта
+
+```text
+src/
+├── components/  # общие и shadcn/ui-компоненты
+├── data/        # локальные демонстрационные данные
+├── layouts/     # оболочки рабочего пространства и дела
+├── lib/         # вспомогательная логика
+├── pages/       # экраны приложения
+└── types/       # TypeScript-типы
+
+public/          # статические файлы и обработка ссылок GitHub Pages
+docs/            # описание архитектуры
+.github/         # автоматическая публикация в GitHub Pages
+```
+
+Подробности: [архитектура проекта](docs/ARCHITECTURE.md).
+
 ## Локальный запуск
 
 ```bash
