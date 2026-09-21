@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Переадресация…</title>
+    <script>
+      const segments = window.location.pathname.split('/').filter(Boolean)
+      const base = segments.length ? `/${segments[0]}/` : '/'
+      const route = window.location.pathname.slice(base.length)
+      window.location.replace(`${base}?p=${encodeURIComponent(route + window.location.search + window.location.hash)}`)
+    </script>
+  </head>
+  <body></body>
+</html>
